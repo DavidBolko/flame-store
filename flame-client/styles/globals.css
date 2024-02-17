@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    html{
+        @apply font-Inter;
+    }
+}
+
+@layer components{
+    .btn{
+        @apply p-1;
+        @apply pr-2;
+        @apply pl-2;
+        @apply flex;
+        @apply items-center;
+        @apply rounded-md;
+        @apply text-xs;
+        @apply gap-1;
+        @apply justify-center;
+        @apply w-fit;
+        @apply bg-neutral-800;
+        @apply text-white;
+        @apply hover:bg-neutral-900;
+    }
+    .btn-danger{
+        @apply btn;
+        @apply bg-red-800;
+        @apply hover:bg-red-600;;
+    }
+    .btn-secondary{
+        @apply btn;
+        @apply bg-neutral-400;
+        @apply hover:bg-neutral-500;
+    }
+    .link{
+        @apply p-0.5;
+        @apply pl-1;
+        @apply pr-1;
+        @apply flex;
+        @apply items-center;
+        @apply rounded-md;
+        @apply gap-1;
+        @apply w-fit;
+        @apply hover:text-white;
+        @apply hover:bg-neutral-700;
+        @apply text-base;
+    }
+    .active-link{
+        @apply p-0.5;
+        @apply pl-1;
+        @apply pr-1;
+        @apply flex;
+        @apply items-center;
+        @apply rounded-md;
+        @apply gap-1;
+        @apply w-fit;
+        @apply bg-neutral-800;
+        @apply text-white;
+        @apply hover:bg-neutral-900;
+        @apply text-base;
+    }
+    label{
+        @apply hidden;
+    }
+    input, textarea, select{
+        @apply outline-none;
+        @apply border;
+        @apply rounded-md;
+        @apply w-full;
+        @apply text-sm;
+        @apply p-2;
+        @apply border-gray-300;
+    }
+    input[type=file]{
+        @apply border-none;
+        @apply opacity-0;
+    }
+    textarea{
+        @apply h-full;
+        @apply resize-none;
+    }
+}
